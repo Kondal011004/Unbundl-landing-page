@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Landing — Figma Prototype</title>
+  <meta name="description" content="Responsive landing page implemented from Figma prototype" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="#">Clove Dental</a>
+
+      
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      
+      <div class="actions">
+        <button class="btn ghost" id="demo-btn">Request Demo</button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Ship features faster. Delight users always.</h1>
+        <p class="sub">Design-led, performance-first components and a lightweight platform that scales with your team.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#pricing">Get Started</a>
+          <a class="btn link" href="#features">Explore Features</a>
+        </div>
+
+        <ul class="stats">
+          <li><strong>99%</strong><span>Uptime</span></li>
+          <li><strong>1,200+</strong><span>Teams</span></li>
+          <li><strong>30ms</strong><span>Avg. response</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="card-mock">
+          <div class="mock-top"></div>
+          <div class="mock-body">
+            <div class="mock-line"></div>
+            <div class="mock-grid">
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+              <div class="tile"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section features">
+    <div class="container">
+      <h2 class="section-title">Core features</h2>
+      <div class="features-list">
+        <article class="feature">
+          <h3>Modular UI Kits</h3>
+          <p>Plug-and-play components built to match design tokens and accessibility standards.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Performance First</h3>
+          <p>Optimized assets and lazy-loading to keep TTFB and interaction times low.</p>
+        </article>
+
+        <article class="feature">
+          <h3>Integrations</h3>
+          <p>Connect with your favorite tools and ship without rewriting existing infra.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="workflow" class="section workflow">
+    <div class="container workflow-grid">
+      <div class="workflow-step">
+        <div class="step-num">1</div>
+        <h4>Design</h4>
+        <p>Convert ideas into pixel-perfect Figma components that sync to your codebase.</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-num">2</div>
+        <h4>Build</h4>
+        <p>Assemble features using lightweight, documented components.</p>
+      </div>
+
+      <div class="workflow-step">
+        <div class="step-num">3</div>
+        <h4>Ship</h4>
+        <p>Deploy quickly with CI-friendly bundles and performance tooling.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <h2 class="section-title">Pricing</h2>
+      <div class="pricing-cards">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="price">Free</p>
+          <ul>
+            <li>Core components</li>
+            <li>Community support</li>
+          </ul>
+          <button class="btn">Choose</button>
+        </div>
+
+        <div class="plan popular">
+          <h3>Pro</h3>
+          <p class="price">$29 / mo</p>
+          <ul>
+            <li>Advanced components</li>
+            <li>Email support</li>
+            <li>Team seats</li>
+          </ul>
+          <button class="btn primary">Pick Pro</button>
+        </div>
+
+        <div class="plan">
+          <h3>Enterprise</h3>
+          <p class="price">Contact</p>
+          <ul>
+            <li>Custom SLAs</li>
+            <li>Dedicated support</li>
+          </ul>
+          <button class="btn">Contact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="cta-strip">
+    <div class="container cta-inner">
+      <div>
+        <h3>Ready to accelerate your roadmap?</h3>
+        <p>Start a free trial or request a demo with our specialists.</p>
+      </div>
+
+      <div class="cta-actions">
+        <a class="btn primary" href="#contact">Start Free</a>
+        <a class="btn ghost" href="#contact">Request Demo</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Contact sales</h2>
+        <p>Tell us a bit about your team and use-case and we’ll get back in one business day.</p>
+        <ul class="contact-meta">
+          <li>Email: sales@unbundl.example</li>
+          <li>Phone: +91 98765 43210</li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <label><input type="text" name="name" placeholder="Full name" required></label>
+        <label><input type="email" name="email" placeholder="Email address" required></label>
+        <label><input type="text" name="company" placeholder="Company (optional)"></label>
+        <label><textarea name="message" rows="4" placeholder="Tell us about your needs"></textarea></label>
+
+        <div class="form-row">
+          <button class="btn primary" type="submit">Send message</button>
+          <button class="btn ghost" type="button" id="clear-btn">Clear</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> Unbundl</p>
+      <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
